@@ -1,0 +1,18 @@
+help ("AirPassengers")
+AirPassengers
+data ("AirPassengers")
+panam <- (AirPassengers)
+class(panam)
+start(panam); end(panam); frequency(panam)
+panam
+ppp <- ts(base1, start=c(1998,1), freq=4)  ### función para declarar una base de datos como serie de tiempo 
+plot(panam, main="número de pasajeros aereos de estados unidos de 1949-1960" ,xlab ="Años", ylab ="Pasajeros (miles)")
+plot(aggregate(panam))
+layout(1:2)
+### Ejercicio
+### Generar un data frame con la base de desocupación que inicia en el primer trimestre del 2005 
+### tasa de desocupación 3.4, 4.8, 3.3, 5.6, 3.2, 2.9, 1.9, 2.8, 6.0, 4.3, 2.2
+### 2) convertirla en serie de tiempo y graficar la st y la tendencia 
+### *** punto extra librarla del segundo examen 
+### obtener un PDF, jpg, tiff. ping con las dos graficas en una misma imágen 
+### lo suben a git hub martes 8 de marzo antes de las 11:59 hrs...
